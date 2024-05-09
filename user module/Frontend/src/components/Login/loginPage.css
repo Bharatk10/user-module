@@ -1,0 +1,26 @@
+.login-container {
+    display: flex;
+    height: 100vh; 
+}
+
+.left-half, .right-half {
+    flex: 1; 
+}
+
+.left-half {
+    background-color: #f0f0f0; 
+}
+
+.right-half {
+    background-color: #ffffff; 
+}
+
+input,select {
+    outline: 0;
+    background:transparent
+}
+
+.custome{
+    background: linear-gradient(45deg, #b3cbda, #e1e4e7);
+}
+

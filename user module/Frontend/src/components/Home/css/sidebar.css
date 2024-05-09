@@ -1,0 +1,60 @@
+/* Sidebar */
+.sidebar {
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 5px black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  overflow-y: auto; 
+  padding-top: 60px; 
+  z-index: 1000; 
+}
+
+.sidebar.open {
+  width: 250px; 
+}
+
+
+
+.main-content {
+  margin-left: 250px; 
+  padding-top: 100px; 
+  transition: margin-left 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Sidebar collapses on smaller screens */
+    padding-top: 50px; /* Adjusted to account for the fixed image */
+  }
+
+  .sidebar.open {
+    width: 250px; /* Sidebar expands on toggling */
+  }
+
+  .main-content {
+    margin-left: 60px; /* Adjust for collapsed sidebar */
+  }
+}
+
+/* Other styles */
+li:hover {
+  font-weight: bold;
+}
+
+button {
+  margin: 10px;
+}
+
+.hide {
+  width: 100px;
+  margin: 30px 10px;
+}
+
+.active .cus {
+  font-weight: bold;
+}
